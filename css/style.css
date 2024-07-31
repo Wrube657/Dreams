@@ -1,0 +1,97 @@
+/* Estilo da página */
+
+body {
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+/* Estilo do menu */
+
+.menu_btn {
+    position: relative;
+    padding: 30px;
+    border-color: #ffffff;
+    border-right: 2px solid white;
+    max-width: 85px;
+    height: 89vh;
+
+}
+
+footer {
+    margin-top: 50vh;
+}
+
+.nav_btn a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 25px;
+    margin-right: auto;
+}
+
+
+
+.ui-btn {
+
+    --btn-transition: .3s;
+    --btn-letter-spacing: .1rem;
+    --btn-animation-duration: 1.2s;
+
+    --hover-btn-color: #00ffff;
+
+
+
+
+}
+
+
+
+.ui-btn {
+    box-sizing: border-box;
+    padding: var(--btn-padding);
+    display: flex;
+
+
+    color: var(--default-btn-color);
+
+    background: var(--btn-default-bg);
+    border: none;
+    cursor: pointer;
+    transition: var(--btn-transition);
+    overflow: hidden;
+    box-shadow: var(--btn-shadow);
+
+
+}
+
+.ui-btn span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    box-sizing: border-box;
+    position: relative;
+    background: inherit;
+}
+
+.ui-btn span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.ui-btn:hover,
+.ui-btn:focus {
+    background: var(--btn-hover-bg);
+}
+
+.ui-btn:hover span,
+.ui-btn:focus span {
+    color: var(--hover-btn-color);
+}
+
+.ui-btn:hover span::before,
+.ui-btn:focus span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+}
