@@ -4,8 +4,16 @@ body {
 
     background-color: rgb(0, 0, 0);
     color: white;
+    display: flex;
 
 }
+
+.text{
+    margin-right: 2%;
+    text-align: justify;
+    font-size: 110%;
+}
+
 
 /* Estilo do menu */
 
@@ -15,12 +23,14 @@ body {
     border-color: #ffffff;
     border-right: 2px solid white;
     max-width: 85px;
-    height: 89vh;
+    height: autovh;
+    display: flex;
+   margin-right: 2%;
 
 }
 
 footer {
-    margin-top: 50vh;
+    margin-top: autovh;
 }
 
 .nav_btn a {
