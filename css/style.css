@@ -4,7 +4,7 @@ body {
 
     background-color: rgb(0, 0, 0);
     color: white;
-    display: flex;
+   
 
 }
 
@@ -20,55 +20,61 @@ body {
 
 /* Estilo do menu */
 
-
-
-.btn-abrir-menu svg {
-    color: #ffffff;
-    font-size: 40px;
-    right: -90%;
-    position: relative;
-
-}
-
-.pages {
+.menu_btn{
+    background-color: rgb(0, 0, 0);
+    border-color: #ffffff;
+    border-left: 2px solid rgb(21, 255, 0);
     height: 100vh;
     position: fixed;
+    top: 0;
+    right: 0;
     z-index: 99999;
-    width: 0%;
-    overflow: hidden;
-    transition: .5s;
-    text-decoration: none;
-
-
+    width: 150px;
 }
 
-.pages {
-    text-decoration: none;
+.menu_btn nav ul{
+    text-align:  right;
 }
 
-.page.abrir-menu {
-    width: 70%;
-}
-
-.pages a {
-    text-align: right;
-    padding: 20px 4%;
-    font-size: 100%;
+.menu_btn nav ul li a{
+    font-size: 20px;
     font-weight: 300;
-    text-decoration: none;
-    color: #ffffff
+    display: block;
+    
 }
+
+.nav_btn ul{
+    list-style-type: none;
+}
+
+.nav_btn ul li{
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     margin-top: autovh;
 }
 
 .nav_btn a {
-    position: relative;
+    
     text-decoration: none;
-    color: #ffffff;
-    margin: 25px;
-    margin-right: auto;
+    color: rgb(21, 255, 0);
+    
 }
 
 /*Animação link*/
@@ -134,4 +140,12 @@ footer {
 .ui-btn:hover span::before,
 .ui-btn:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
+}
+
+/*Estilo Mobile*/
+
+@media screen and (max-width: 573px) {
+
+    
+    
 }
