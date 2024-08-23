@@ -8,12 +8,15 @@ body {
 
 }
 
-.text{
+.text {
     margin-right: 2%;
     text-align: justify;
     font-size: 110%;
 }
 
+.icon_menu_mobile {
+    display: none;
+}
 
 /* Estilo do menu */
 
@@ -25,7 +28,7 @@ body {
     max-width: 85px;
     height: autovh;
     display: flex;
-   margin-right: 2%;
+    margin-right: 2%;
 
 }
 
@@ -104,4 +107,81 @@ footer {
 .ui-btn:hover span::before,
 .ui-btn:focus span::before {
     animation: chitchat linear both var(--btn-animation-duration);
+}
+
+/*Estilizado para o mobile*/
+
+@media screen and (max-width: 560px) {
+
+    /*Bloquando Menu*/
+
+    .icon_menu_mobile {
+        display: block;
+    }
+
+    .menu_btn {
+        display: none;
+    }
+
+    /*Estilo do menu*/
+
+    .btn-abrir-menu svg {
+        color: #ffffff;
+        position: relative;
+
+    }
+
+
+    .menu_mobile {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .5s;
+        text-decoration: none;
+    }
+
+    .menu-mobile a {
+        text-decoration: none;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile a h3 {
+        text-align: right;
+        padding: 20px 4%;
+        font-size: 100%;
+        font-weight: 300;
+        text-decoration: none;
+        color: #ffffff
+    }
+
+    .menu-mobile .btn-fechar {
+        color: #ffffff;
+        font-size: 20px;
+        padding: 20px 5%;
+
+    }
+
+
+
+    /*estilo da página*/
+
+
+    body {
+        flex-direction: column;
+        font-size: 90%;
+    }
+
+
+    .text {
+        left: 2%;
+    }
+
+
 }
