@@ -1,5 +1,5 @@
 let btnMenu = document.getElementById('btn-menu')
-let menu = document.getElementById('menu-mobile')
+let menu = document.getElementById('pages')
 
 btnMenu.addEventListener('click', ()=>{
     menu.classList.add('abrir-menu')
