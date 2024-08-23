@@ -8,3 +8,8 @@ btnMenu.addEventListener('click', ()=>{
 menu.addEventListener('click', ()=>{
     menu.classList.remove('abrir-menu')
 })
+
+// Botão animação link 
+document.querySelector('.ui-btn').addEventListener('click', function() {
+    this.classList.add('clicked');
+});

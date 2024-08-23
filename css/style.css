@@ -14,9 +14,7 @@ body {
     font-size: 110%;
 }
 
-.icon_menu_mobile {
-    display: none;
-}
+
 
 /* Estilo do menu */
 
@@ -29,52 +27,37 @@ body {
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 150px;
+    width: 70%;
 }
 
 .menu_btn nav ul {
-    text-align: right;
+    text-align: center;
 }
 
 .menu_btn nav ul li a {
     font-size: 20px;
     font-weight: 300;
-    padding: 20px 4%;
+    padding: 10px;
     display: block;
+   
+  
+}
 
+.nav_btn a:hover{
+    color: aliceblue;
+    transform:scale(1.05);
 }
 
 .nav_btn ul {
     list-style-type: none;
 }
 
-.nav_btn ul li {
-
-    padding: 0 5px;
-}
+    
 
 .nav_btn ul li a:hover {
     background-color: rgb(21, 255, 0);
     color: black;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    margin-top: autovh;
+    
 }
 
 .nav_btn a {
@@ -83,6 +66,104 @@ footer {
     color: rgb(21, 255, 0);
 
 }
+
+.btn-fechar svg{
+    color: rgb(21, 255, 0) ;
+    font-size: 30px;
+
+}
+
+/*animação do link*/
+
+.ui-btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #7B3F00;
+    border: 3px solid #4A2600;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.ui-btn:hover {
+    transform: scale(1.05);
+}
+
+.ui-btn:active {
+    transform: scale(1);
+}
+
+.ui-btn::before,
+.ui-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #4A2600;
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.ui-btn::before {
+    transform: translate(-50%, -50%);
+}
+
+.ui-btn::after {
+    transform: translate(-50%, -50%);
+}
+
+.ui-btn.clicked::before,
+.ui-btn.clicked::after {
+    width: 400px;
+    height: 400px;
+}
+
+.ui-btn.clicked::after {
+    animation: reveal 1s forwards;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+
+.reveal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.ui-btn.clicked + .reveal-content {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Estilo Mobile*/
