@@ -4,7 +4,7 @@ body {
 
     background-color: rgb(0, 0, 0);
     color: white;
-   
+
 
 }
 
@@ -20,7 +20,7 @@ body {
 
 /* Estilo do menu */
 
-.menu_btn{
+.menu_btn {
     background-color: rgb(0, 0, 0);
     border-color: #ffffff;
     border-left: 2px solid rgb(21, 255, 0);
@@ -32,23 +32,30 @@ body {
     width: 150px;
 }
 
-.menu_btn nav ul{
-    text-align:  right;
+.menu_btn nav ul {
+    text-align: right;
 }
 
-.menu_btn nav ul li a{
+.menu_btn nav ul li a {
     font-size: 20px;
     font-weight: 300;
+    padding: 20px 4%;
     display: block;
-    
+
 }
 
-.nav_btn ul{
+.nav_btn ul {
     list-style-type: none;
 }
 
-.nav_btn ul li{
+.nav_btn ul li {
+
     padding: 0 5px;
+}
+
+.nav_btn ul li a:hover {
+    background-color: rgb(21, 255, 0);
+    color: black;
 }
 
 
@@ -71,81 +78,13 @@ footer {
 }
 
 .nav_btn a {
-    
+
     text-decoration: none;
     color: rgb(21, 255, 0);
-    
-}
-
-/*Animação link*/
-
-.ui-btn {
-
-    --btn-transition: .3s;
-    --btn-letter-spacing: .1rem;
-    --btn-animation-duration: 1.2s;
-
-    --hover-btn-color: #00ffff;
-
-
-
 
 }
 
-
-
-.ui-btn {
-    box-sizing: border-box;
-    padding: var(--btn-padding);
-    display: flex;
-
-
-    color: var(--default-btn-color);
-
-    background: var(--btn-default-bg);
-    border: none;
-    cursor: pointer;
-    transition: var(--btn-transition);
-    overflow: hidden;
-    box-shadow: var(--btn-shadow);
-
-
-}
-
-.ui-btn span {
-    letter-spacing: var(--btn-letter-spacing);
-    transition: var(--btn-transition);
-    box-sizing: border-box;
-    position: relative;
-    background: inherit;
-}
-
-.ui-btn span::before {
-    box-sizing: border-box;
-    position: absolute;
-    content: "";
-    background: inherit;
-}
-
-.ui-btn:hover,
-.ui-btn:focus {
-    background: var(--btn-hover-bg);
-}
-
-.ui-btn:hover span,
-.ui-btn:focus span {
-    color: var(--hover-btn-color);
-}
-
-.ui-btn:hover span::before,
-.ui-btn:focus span::before {
-    animation: chitchat linear both var(--btn-animation-duration);
-}
 
 /*Estilo Mobile*/
 
-@media screen and (max-width: 573px) {
-
-    
-    
-}
+@media screen and (max-width: 573px) {}
