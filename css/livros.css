@@ -17,18 +17,12 @@ body {
 
 
 .imagem_livro{
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 
 .imagem_livro img{
-    width: 25%;
+    width: 50%;
     border: 2px solid rgb(255, 0, 0) ;
-    
-    
-    
-         
 }
 
 /* Estilo do menu */
