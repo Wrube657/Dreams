@@ -93,7 +93,7 @@ body {
 .nav_btn a {
 
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
 
 }
 
@@ -129,8 +129,8 @@ body {
 }
 
 .cap {
-    color: red;
-   text-decoration-color: red;
+    color: rgb(255, 255, 255);
+   text-decoration-color: rgb(255, 255, 255);
 
 }
 
