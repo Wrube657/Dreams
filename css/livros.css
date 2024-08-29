@@ -6,12 +6,20 @@ body {
     color: white;
 
 
+
 }
 
 .text {
     margin-right: 5%;
     text-align: justify;
     font-size: 110%;
+}
+
+.poemas {
+    margin-right: 5%;
+    text-align:left;
+    font-size: 110%;
+    font-style: italic;
 }
 
 .descricao {
