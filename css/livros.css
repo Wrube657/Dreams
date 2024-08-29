@@ -101,7 +101,7 @@ body {
 .nav_btn a {
 
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 
 }
 
@@ -137,8 +137,8 @@ body {
 }
 
 .cap {
-    color: rgb(255, 255, 255);
-    text-decoration-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-decoration-color: rgb(255, 0, 0);
 
 }
 
@@ -162,5 +162,18 @@ body {
 
     .poemas {
         font-style: italic;
+    }
+
+    .cap {
+        color: rgb(255, 0, 0);
+        text-decoration-color: rgb(255, 0, 0);
+    
+    }
+
+    .nav_btn a {
+
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    
     }
 }
