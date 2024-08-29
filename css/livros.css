@@ -153,11 +153,12 @@ body {
 /*Estilo Mobile*/
 
 @media screen and (max-width: 573px) {
+
     .text,
     .poemas,
     .descricao {
-        font-size: 90%; 
-        margin-right: 0; 
+        font-size: 90% !important;
+        margin-right: 0 !important;
     }
 
     .poemas {
@@ -167,13 +168,13 @@ body {
     .cap {
         color: rgb(255, 0, 0);
         text-decoration-color: rgb(255, 0, 0);
-    
+
     }
 
     .nav_btn a {
 
         text-decoration: none;
         color: rgb(255, 255, 255);
-    
+
     }
 }
