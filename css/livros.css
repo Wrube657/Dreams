@@ -153,12 +153,14 @@ body {
 /*Estilo Mobile*/
 
 @media screen and (max-width: 573px) {
-
-    .poemas {
-        margin-right: 5%;
-        text-align: left;
-        font-size: 110%;
-        font-style: italic;
+    .text,
+    .poemas,
+    .descricao {
+        font-size: 90%; 
+        margin-right: 0; 
     }
 
+    .poemas {
+        font-style: italic;
+    }
 }
