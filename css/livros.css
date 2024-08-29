@@ -17,7 +17,7 @@ body {
 
 .poemas {
     margin-right: 5%;
-    text-align:left;
+    text-align: left;
     font-size: 110%;
     font-style: italic;
 }
@@ -31,13 +31,13 @@ body {
 /*Estilo das imagens*/
 
 
-.imagem_livro{
-    text-align: center; 
+.imagem_livro {
+    text-align: center;
 }
 
-.imagem_livro img{
+.imagem_livro img {
     width: 75%;
-    border: 2px solid rgb(255, 0, 0) ;
+    border: 2px solid rgb(255, 0, 0);
 }
 
 /* Estilo do menu */
@@ -138,7 +138,7 @@ body {
 
 .cap {
     color: rgb(255, 255, 255);
-   text-decoration-color: rgb(255, 255, 255);
+    text-decoration-color: rgb(255, 255, 255);
 
 }
 
@@ -152,4 +152,13 @@ body {
 
 /*Estilo Mobile*/
 
-@media screen and (max-width: 573px) {}
+@media screen and (max-width: 573px) {
+
+    .poemas {
+        margin-right: 5%;
+        text-align: left;
+        font-size: 110%;
+        font-style: italic;
+    }
+
+}
